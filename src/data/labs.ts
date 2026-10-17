@@ -1,0 +1,4 @@
+export const labs = [
+ { name: 'RX23 Clips', icon: 'clips', description: 'Convertimos videos largos en piezas cortas para redes sociales mediante selección de momentos, formato vertical, subtítulos y revisión humana.', features: ['Selección de momentos', 'Clips 9:16', 'Subtítulos', 'Hooks', 'Textos para redes', 'Revisión humana'], cta: 'Solicitar una prueba', message: 'Hola, me interesa participar en la prueba de RX23 Clips.' },
+ { name: 'RX23 SEO', icon: 'search', description: 'Analizamos la presencia digital de un sitio, identificamos oportunidades y damos seguimiento a aspectos técnicos, palabras clave y competencia.', features: ['Auditoría de sitio', 'SEO técnico', 'Palabras clave', 'Revisión de competencia', 'Seguimiento', 'Recomendaciones'], cta: 'Solicitar diagnóstico', message: 'Hola, me interesa conocer el servicio piloto de RX23 SEO.' },
+] as const;

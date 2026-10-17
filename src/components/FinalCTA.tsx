@@ -1,0 +1,3 @@
+import { contact } from '../config/contact';
+import { WhatsAppCTA, Icon } from './UI';
+export default function FinalCTA() { return <section id="contacto" className="final-cta"><div className="container cta-inner"><div><span className="eyebrow">CONSTRUYAMOS ALGO JUNTOS</span><h2>¿Tienes una idea?<br/><span>Hablemos.</span></h2><p>Cuéntanos qué necesita tu negocio y podemos ayudarte a encontrar una solución adecuada.</p></div><div className="final-actions"><WhatsAppCTA className="button white-button">Hablar por WhatsApp</WhatsAppCTA><a className="email-link" href={`mailto:${contact.email}`}><Icon name="mail" size={17}/>{contact.email}</a></div></div></section>; }

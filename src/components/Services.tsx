@@ -1,0 +1,3 @@
+import { services } from '../data/services';
+import { Icon, SectionHead } from './UI';
+export default function Services() { return <section id="servicios" className="section container"><SectionHead eyebrow="LO QUE HACEMOS" title="Soluciones para hacer crecer tu negocio">Tecnología clara, accesible y acompañada por personas que pueden ayudarte durante todo el proyecto.</SectionHead><div className="services-grid">{services.map((s,i)=><article className="service-card" key={s.title}><div className="service-top"><span className="icon-box"><Icon name={s.icon}/></span><span className="card-number">0{i+1}</span></div><h3>{s.title}</h3><p>{s.description}</p></article>)}</div></section>; }

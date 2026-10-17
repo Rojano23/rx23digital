@@ -1,0 +1,5 @@
+export const products = [
+ { name: 'HomePanel Hogar', kind: 'home', state: 'En desarrollo', description: 'Una plataforma para concentrar información, sensores y servicios del hogar en un mismo lugar.', tags: ['Gas y agua', 'Calendario', 'Servicios', 'Directorio', 'Futura domótica'], screenshot: 'assets/products/homepanel/homepanel-dashboard.png' as string | null },
+ { name: 'KM0 Nexus', kind: 'fleet', state: 'En desarrollo', description: 'Plataforma para administración de activos vehiculares e industriales.', tags: ['Vehículos y conductores', 'Combustible', 'Mantenimiento', 'Gastos e ingresos', 'Seguros', 'Integración industrial'], screenshot: null as string | null },
+ { name: 'LicitIA', kind: 'document', state: 'En desarrollo', description: 'Tecnología para analizar documentación de licitaciones y facilitar la identificación de requisitos, alcances y oportunidades.', tags: ['PEMEX', 'CFE', 'Dependencias públicas'], screenshot: 'assets/products/licitia/licitia-bidding.png' as string | null },
+] as const;

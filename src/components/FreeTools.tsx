@@ -1,0 +1,3 @@
+import { freeTools } from '../data/tools';
+import { Icon, SectionHead } from './UI';
+export default function FreeTools() { return <section id="herramientas" className="section container tools-section"><div className="tools-heading"><SectionHead eyebrow="PEQUEÑAS IDEAS, GRAN UTILIDAD" title="Herramientas gratuitas">Pequeñas soluciones desarrolladas por RX23 para resolver tareas cotidianas.</SectionHead><span className="tools-signature">RX23 <strong>Tools</strong><span>↗</span></span></div><div className="tools-grid">{freeTools.map(t=><article className="tool-card" key={t.path}><Icon name={t.icon} size={24}/><h3>{t.name}</h3><span>Próximamente</span></article>)}</div></section>; }
