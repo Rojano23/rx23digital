@@ -1,0 +1,6 @@
+import { assetUrl } from '../../config/contact';
+import type { Product } from '../../data/products';
+import { ArrowRight, Icon } from '../UI';
+export default function DevelopmentCard({ product, index }: { product: Product; index: number }) {
+  return <article className={`solution-product reveal reveal-delay-${index + 1}`}><div className="solution-product-image">{product.screenshot ? <img src={assetUrl(product.screenshot)} alt={`Captura real de ${product.name}`} loading="lazy" width="800" height="500"/> : <div className={`solution-blueprint ${product.kind}`}><div className="product-blueprint"><div className="blueprint-top"><span/><span/><span/></div><div className="blueprint-content"><span className="product-symbol"><Icon name={product.kind} size={35}/></span><div className="blueprint-lines"><i/><i/><i/></div></div><div className="blueprint-blocks"><i/><i/><i/></div></div><span className="concept-label">CONCEPTO · VISTA PREVIA PENDIENTE</span></div>}</div><div className="solution-product-content"><span className="solution-state">{product.state}</span><h3>{product.name}</h3><p>{product.applicationDescription ?? product.description}</p>{product.path ? <a className="text-link" href={assetUrl(`${product.path}/`)}>Conocer HomePanel <ArrowRight size={16}/></a> : <span className="solution-pending">Más información próximamente</span>}</div></article>;
+}

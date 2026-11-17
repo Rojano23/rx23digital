@@ -1,1 +1,1 @@
-export const navigation = [['Inicio','inicio'],['Servicios','servicios'],['RX23 Labs','labs'],['Desarrollos','desarrollos'],['Proyectos','proyectos'],['Herramientas','herramientas'],['Planes','planes'],['Contacto','contacto']];
+export const navigation = [['Inicio','inicio'],['Servicios','servicios'],['Desarrollos','desarrollos'],['Proyectos','proyectos'],['Herramientas','herramientas'],['Planes','planes'],['Contacto','contacto']];

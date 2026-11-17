@@ -1,0 +1,186 @@
+/* Pricing styles remain inside the existing Home #planes section. */
+#planes .plans-explanation{padding:27px 30px;border:1px solid #d9e9f2;background:#f1f9fd;border-radius:11px;margin-bottom:29px}#planes h3{font-size:23px;line-height:1.4;letter-spacing:-.7px}#planes h4{font-family:Manrope,sans-serif;margin:0;font-size:14px;color:#2b526c}#planes .plans-components{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:24px}#planes .plans-components>div{display:grid;grid-template-columns:25px 1fr;gap:9px 12px;align-items:center}#planes .plans-components svg{color:#0986aa}#planes .plans-components p{grid-column:2;font-size:13px;max-width:450px}#planes .plans-first-year-note{border-top:1px solid #d9e8f1;margin-top:24px;padding-top:18px;font-size:13px;color:#3a637b}#planes .plans-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}#planes .plan-card{padding:27px 25px;display:flex;flex-direction:column;position:relative;transition:border-color .3s,box-shadow .3s,translate .3s}#planes .plan-card.is-recommended{border-color:#70bed6;box-shadow:0 5px 22px #087fae0a}#planes .plans-card-heading{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;min-height:29px}#planes .plan-card h3{font-size:22px;min-height:0}#planes .plans-recommended{font-size:8px;letter-spacing:.7px;font-weight:700;border:1px solid #c9e7f2;background:#eef9fd;color:#077da2;border-radius:4px;padding:5px 7px}#planes .plan-card>.plans-description{font-size:13px;line-height:1.8;min-height:71px;margin-top:15px}#planes .plan-price{margin:24px 0 21px;gap:5px}#planes .plan-card .plan-price strong{font-size:clamp(27px,2.6vw,36px);line-height:1.4;letter-spacing:-1.3px;white-space:nowrap}#planes .plan-price>span{font-size:11px}#planes .plan-price small{font-size:12px}#planes .plans-breakdown{margin:0 0 23px;padding:15px 0;border-block:1px solid #e5edf3;display:grid;gap:12px}#planes .plans-breakdown>div{display:flex;align-items:baseline;flex-wrap:wrap;justify-content:space-between;gap:5px 10px;font-size:11px;line-height:1.7}#planes .plans-breakdown dt{color:#6a8294}#planes .plans-breakdown dd{margin:0;color:#365e78;font-weight:600}#planes .plans-features{padding:0;margin:0;list-style:none;display:grid;gap:11px}#planes .plans-features li{display:flex;align-items:flex-start;gap:9px;font-size:12px;color:#536f83;line-height:1.65}#planes .plans-features svg{color:#0a8aad;margin-top:3px}#planes .plan-card>.plans-audience{font-size:11px;line-height:1.8;min-height:0;margin:20px 0;color:#748999}#planes .plans-card-bottom{margin-top:auto}#planes .plans-renewal{border-top:1px solid #e1ebf2;padding-top:17px;margin:0 0 20px;display:grid;gap:5px}#planes .plans-renewal span{font-size:10px;color:#748999}#planes .plans-renewal strong{font-size:13px;color:#315973;font-weight:650}#planes .plan-button{font-size:12px;min-height:46px}#planes .plans-featured-button{background:#007fae;color:#fff;border-color:#007fae}#planes .plans-featured-button:hover{background:#006e98}#planes .pricing-note{font-size:12px;margin-top:21px}#planes .plans-comparison{margin-top:44px}#planes .plans-comparison>p{font-size:12px;margin-top:12px}#planes .plans-table-scroll{max-width:100%;overflow-x:auto;border:1px solid #dce8f0;border-radius:9px;background:#fff;margin-top:22px;overscroll-behavior-x:contain}#planes .plans-table-scroll:focus-visible{outline:3px solid #0096c7;outline-offset:4px}#planes table{border-collapse:collapse;width:100%;min-width:650px;text-align:left;font-size:12px;line-height:1.7}#planes th,#planes td{padding:14px 18px;border-bottom:1px solid #e5edf3;color:#557389;vertical-align:top}#planes thead th{background:#eef7fc;color:#254f6b;font-size:13px}#planes tbody th{font-weight:500;width:27%;color:#355c74}#planes tbody tr:last-child>*{border-bottom:0}#planes .plans-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}#planes .plans-infrastructure{margin-top:38px;padding:30px;border:1px solid #dce8f0;border-radius:11px;background:white}#planes .plans-infrastructure>h3{margin:14px 0}#planes .plans-infrastructure>p{font-size:13px;max-width:850px}#planes .plans-infra-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:25px 0}#planes .plans-infra-grid article{padding:19px;border:1px solid #e0ebf2;border-radius:8px;background:#f9fcfd}#planes .plans-infra-grid strong{display:block;font-family:Manrope,sans-serif;font-size:20px;margin:15px 0 12px;letter-spacing:-.6px}#planes .plans-infra-grid strong small{font-size:11px;font-family:'DM Sans',sans-serif;font-weight:400;letter-spacing:0;color:#648094}#planes .plans-infra-grid p{font-size:12px}#planes .plans-infra-includes{display:flex;align-items:flex-start;gap:9px}#planes .plans-infra-includes svg{color:#0788ad;margin-top:3px}#planes .plans-infrastructure>.plans-domain-note{font-size:11px;margin-top:12px;color:#738b9b}#planes .plans-mail{display:flex;gap:13px;align-items:center;border-top:1px solid #e2ecf3;margin-top:23px;padding-top:23px}#planes .plans-mail>svg{color:#0d86a9}#planes .plans-mail span{display:block;font-size:12px;color:#6c8496;margin-top:8px}#planes .plans-infra-cta{margin-top:23px;min-height:35px}#planes .plans-after-year{margin-top:37px;padding:28px 30px;border-radius:10px;border:1px solid #d7eaf2;background:#eef8fc}#planes .plans-after-year>p{font-size:13px;margin-top:15px;max-width:920px}#planes .plans-after-year dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:23px 0}#planes .plans-after-year dl>div{border-left:2px solid #88cadd;padding-left:14px;display:grid;gap:7px}#planes .plans-after-year dt{font-size:12px;color:#50748b}#planes .plans-after-year dd{margin:0;font-size:15px;font-weight:650;color:#234e69}#planes .plans-after-year>.plans-secondary-note,#planes .plans-secondary-note{font-size:11px;color:#6a8497}#planes .plans-additional{margin-top:36px}#planes .plans-additional>p{font-size:12px;margin-top:13px}#planes .plans-additional ul{display:flex;flex-wrap:wrap;gap:9px;list-style:none;padding:0;margin:19px 0}#planes .plans-additional li{font-size:11px;color:#678194;border:1px solid #dfe9f0;background:#fff;border-radius:5px;padding:7px 10px}#planes .plans-help{display:flex;align-items:center;justify-content:space-between;gap:35px;border-top:1px solid #dce7ef;margin-top:34px;padding-top:31px}#planes .plans-help>div:first-child{max-width:700px}#planes .plans-help p{font-size:13px;margin-top:13px}#planes .plans-help-actions{display:flex;flex-direction:column;gap:10px;flex-shrink:0}#planes .plans-help-actions .button{font-size:12px}#planes .button svg,#planes .text-link svg{transition:transform .28s}#planes .button:is(:hover,:focus-visible) svg,#planes .text-link:is(:hover,:focus-visible) svg{transform:translateX(3px)}
+@media(hover:hover) and (pointer:fine){#planes .plan-card:hover{translate:0 -3px;border-color:#7fc6dc;box-shadow:0 9px 25px #163e5910}}
+@media(max-width:1100px){#planes .plans-grid{grid-template-columns:minmax(0,1fr);gap:20px}#planes .plan-card{padding:28px}#planes .plan-card>.plans-description{min-height:0;max-width:700px}#planes .plans-features{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 24px}#planes .plan-card .plan-price strong{font-size:36px}#planes .plans-breakdown{max-width:600px}#planes .plans-audience{max-width:690px}#planes .plans-renewal{margin-top:0}#planes .plan-button{max-width:370px}#planes .plans-help{align-items:flex-start}#planes .plans-help-actions{max-width:240px}}
+@media(max-width:700px){#planes .plans-components{grid-template-columns:minmax(0,1fr);gap:22px}#planes .plans-infra-grid,#planes .plans-after-year dl{grid-template-columns:minmax(0,1fr)}#planes .plans-infra-grid article{padding:20px}#planes .plans-infra-grid strong{margin:12px 0 8px}#planes .plans-help{flex-direction:column;gap:24px}#planes .plans-help-actions{max-width:none;width:100%}#planes .plans-help-actions .button{width:100%}}
+@media(max-width:600px){#planes h3{font-size:22px}#planes .plans-explanation{padding:23px 21px}#planes .plans-components p,#planes .plans-first-year-note{font-size:12px}#planes .plan-card{padding:25px 22px}#planes .plan-card h3{font-size:24px}#planes .plan-card>.plans-description{font-size:13px}#planes .plan-card .plan-price strong{font-size:34px}#planes .plans-features{grid-template-columns:minmax(0,1fr);gap:12px}#planes .plans-features li{font-size:12px}#planes .plans-breakdown>div{font-size:11px}#planes .plan-button{max-width:none}#planes .pricing-note{font-size:11px;line-height:1.8}#planes .plans-comparison{margin-top:33px}#planes .plans-comparison>p{font-size:11px}#planes .plans-table-scroll{margin-top:18px}#planes th,#planes td{padding:12px 14px}#planes .plans-infrastructure{padding:24px 21px;margin-top:29px}#planes .plans-infrastructure>p{font-size:12px}#planes .plans-after-year{padding:24px 21px}#planes .plans-after-year>p{font-size:12px}#planes .plans-after-year dd{font-size:16px}#planes .plans-after-year dl{gap:20px}#planes .plans-additional li{font-size:10px}#planes .plans-help p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){#planes .plan-card,#planes .button,#planes .button svg,#planes .text-link svg{transition:none!important;translate:none!important;transform:none!important}}
+
+/* RX23-WEB-05.1 contrast layer for pricing/plan blocks */
+#planes{
+	--plans-bg:var(--theme-bg-soft,#f6fbfe);
+	--plans-surface:var(--theme-surface,#ffffff);
+	--plans-surface-soft:var(--theme-surface-soft,#f1f8fc);
+	--plans-border:var(--theme-border,#dce8f0);
+	--plans-text:var(--theme-text,#142c45);
+	--plans-text-muted:var(--theme-text-muted,#607185);
+	--plans-accent:#0b8fb8;
+	--plans-accent-soft:#e8f6fc;
+	--plans-link:#0a84ae;
+}
+
+#planes .plans-explanation,
+#planes .plans-table-scroll,
+#planes .plans-infrastructure,
+#planes .plans-after-year,
+#planes .plan-card,
+#planes .plans-infra-grid article{
+	background:var(--plans-surface);
+	border-color:var(--plans-border);
+}
+
+#planes .plans-explanation,
+#planes .plans-after-year{
+	background:var(--plans-surface-soft);
+}
+
+#planes h3,
+#planes h4,
+#planes .plan-card h3,
+#planes .plans-infrastructure h3,
+#planes .plans-help h3,
+#planes .plans-after-year h3{
+	color:var(--plans-text);
+}
+
+#planes p,
+#planes .plans-description,
+#planes .plans-features li,
+#planes .plans-first-year-note,
+#planes .plans-audience,
+#planes .plans-domain-note,
+#planes .plans-secondary-note,
+#planes .plans-help p,
+#planes .plans-comparison>p,
+#planes .pricing-note,
+#planes .plans-breakdown dt,
+#planes .plans-renewal span,
+#planes .plans-after-year dt,
+#planes .plans-additional li,
+#planes th,
+#planes td{
+	color:var(--plans-text-muted);
+}
+
+#planes .plan-price strong,
+#planes .plans-renewal strong,
+#planes .plans-breakdown dd,
+#planes .plans-after-year dd,
+#planes .plans-infra-grid strong,
+#planes .plans-mail h4,
+#planes thead th,
+#planes tbody th{
+	color:var(--plans-text);
+}
+
+#planes .plans-recommended{
+	border-color:color-mix(in srgb,var(--plans-accent) 40%,var(--plans-border) 60%);
+	background:var(--plans-accent-soft);
+	color:var(--plans-accent);
+}
+
+#planes .plans-features svg,
+#planes .plans-infra-includes svg,
+#planes .plans-mail>svg{
+	color:var(--plans-accent);
+}
+
+#planes .plans-additional li{
+	background:var(--plans-surface);
+	border-color:var(--plans-border);
+}
+
+#planes .plans-help,
+#planes .plans-breakdown,
+#planes .plans-renewal,
+#planes .plans-mail,
+#planes th,
+#planes td,
+#planes .plans-components p,
+#planes .plans-first-year-note,
+#planes .plans-infra-includes,
+#planes .plans-table-scroll,
+#planes .plans-after-year dl>div{
+	border-color:var(--plans-border);
+}
+
+#planes .plans-after-year dl>div{
+	border-left-color:color-mix(in srgb,var(--plans-accent) 55%,var(--plans-border) 45%);
+}
+
+#planes .plans-table-scroll,
+#planes .plans-infra-grid article{
+	box-shadow:none;
+}
+
+#planes .plans-infra-cta,
+#planes .plans-help .text-link,
+#planes .plans-help-actions .secondary{
+	color:var(--plans-link);
+}
+
+#planes .plans-help-actions .secondary{
+	border-color:var(--plans-border);
+	background:var(--plans-surface);
+}
+
+#planes .plans-help-actions .secondary:hover,
+#planes .plans-infra-cta:hover{
+	color:#056c93;
+}
+
+html[data-theme='dark'] #planes{
+	--plans-bg:#0d1d2c;
+	--plans-surface:#112434;
+	--plans-surface-soft:#152b3e;
+	--plans-border:#2a4b64;
+	--plans-text:#deebf4;
+	--plans-text-muted:#b1c2cf;
+	--plans-accent:#4ec8ea;
+	--plans-accent-soft:#173246;
+	--plans-link:#8ee3fa;
+}
+
+html[data-theme='dark'] #planes .plans-section,
+html[data-theme='dark'] #planes.plans-section{
+	background:linear-gradient(180deg,var(--plans-bg),var(--theme-bg,#08141f) 520px);
+}
+
+html[data-theme='dark'] #planes .plans-table-scroll,
+html[data-theme='dark'] #planes .plans-infra-grid article,
+html[data-theme='dark'] #planes .plans-help-actions .secondary,
+html[data-theme='dark'] #planes .plans-additional li{
+	background:#173246;
+}
+
+html[data-theme='dark'] #planes .plans-featured-button{
+	background:#1ba7d4;
+	border-color:#1ba7d4;
+	color:#052233;
+}
+
+html[data-theme='dark'] #planes .plans-featured-button:hover{
+	background:#44c6e8;
+	border-color:#44c6e8;
+}
+
+html[data-theme='dark'] #planes .plan-button{
+	border-color:#3c6785;
+	background:#17354c;
+	color:#d7ebf6;
+}
+
+html[data-theme='dark'] #planes .plan-button:hover{
+	background:#204764;
+	border-color:#4f82a4;
+}
+
+html[data-theme='dark'] #planes thead th{
+	background:#193449;
+}
+
+html[data-theme='dark'] #planes .plans-table-scroll:focus-visible,
+html[data-theme='dark'] #planes .plans-help-actions .secondary:focus-visible,
+html[data-theme='dark'] #planes .plans-infra-cta:focus-visible{
+	outline-color:#4ec8ea;
+}

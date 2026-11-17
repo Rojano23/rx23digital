@@ -40,3 +40,292 @@
 @media(max-width:900px){.nav-links{gap:0}.nav-inner{gap:22px}}
 @media(max-width:600px){.nav-inner{gap:12px}.real-devices .visual-caption{font-size:6px;left:47px}.product-visual>img{padding:8px}}
 @media(prefers-reduced-motion:reduce){.device-scene{transform:none}.real-devices .floating-label{translate:none}}
+
+/* The first available RX23 Tool. */
+.tools-grid .available-tool{display:block}.tools-grid .available-tool>span{color:#087b93;background:#e9f8fc}.tools-grid .tool-open{font-size:10px;margin-top:16px}.tools-grid .available-tool:focus-visible{outline:3px solid #0096c7;outline-offset:4px}
+
+/* RX23-WEB-03: Hero visual refresh (scoped) */
+.hero{
+background:linear-gradient(122deg,#fefefe 8%,#f3fbff 52%,#e8f5fc 100%);
+isolation:isolate;
+}
+.hero-gradient{
+position:absolute;
+inset:0;
+z-index:0;
+pointer-events:none;
+background:
+radial-gradient(520px 280px at 12% 2%,#00b8e214,transparent 72%),
+radial-gradient(600px 300px at 92% 16%,#007db51a,transparent 72%);
+}
+.hero-grid{opacity:.8}
+.hero-inner{
+position:relative;
+z-index:1;
+gap:26px;
+padding-top:32px;
+padding-bottom:58px;
+}
+.hero-copy{
+max-width:600px;
+padding:24px 24px 20px;
+border:1px solid #daeaf2;
+border-radius:20px;
+background:linear-gradient(170deg,#ffffffde,#f8fcffde);
+box-shadow:0 20px 38px #0f37510b;
+}
+.hero-chip{
+display:inline-flex;
+align-items:center;
+margin-left:10px;
+padding:6px 9px;
+border:1px solid #d3e9f2;
+border-radius:999px;
+background:#f2fbff;
+color:#427089;
+font-size:9px;
+font-weight:650;
+letter-spacing:.6px;
+}
+.hero h1{
+font-size:clamp(40px,3.8vw,58px);
+line-height:1.14;
+letter-spacing:-2.4px;
+margin:20px 0;
+}
+.hero-copy>p{max-width:500px;font-size:14px;line-height:1.85}
+.hero-actions{margin-top:27px;gap:11px}
+.hero-actions .secondary{
+border-color:#cae3ef;
+box-shadow:0 7px 16px #0f355108;
+}
+.hero-actions .secondary:hover{border-color:#9dccde}
+.hero-benefits{
+margin-top:24px;
+gap:10px 12px;
+}
+.hero-benefits span{
+padding:8px 10px;
+border:1px solid #dbebf3;
+border-radius:999px;
+background:#f7fcff;
+font-size:9px;
+font-weight:550;
+color:#496a7e;
+}
+.hero-bottom{
+padding-top:23px;
+padding-bottom:28px;
+border-top:1px solid #d7e8f0;
+}
+.hero-bottom>a{
+font-weight:650;
+color:#32566d;
+}
+
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+.hero-copy{transition:transform .28s ease,box-shadow .28s ease}
+.hero-copy:hover{transform:translateY(-2px);box-shadow:0 24px 45px #0f375113}
+}
+
+@media(max-width:1150px){
+.hero-inner{gap:18px;padding-top:24px;padding-bottom:48px}
+.hero-copy{padding:20px 20px 16px}
+.hero h1{font-size:clamp(34px,4.2vw,48px)}
+}
+
+@media(max-width:900px){
+.hero-inner{padding-top:18px;padding-bottom:42px}
+.hero-copy{max-width:100%;padding:16px 16px 14px;border-radius:16px}
+.hero-chip{display:block;margin:9px 0 0;padding:5px 8px;width:max-content}
+.hero h1{font-size:44px;line-height:1.16;letter-spacing:-2px}
+.hero-copy>p{font-size:14px}
+.hero-benefits span{font-size:10px}
+}
+
+@media(max-width:600px){
+.hero-inner{padding-top:14px;padding-bottom:26px;gap:24px}
+.hero-copy{padding:14px 12px 12px;border-radius:14px}
+.hero h1{font-size:38px;letter-spacing:-1.8px;margin:18px 0}
+.hero-copy>p{font-size:13px}
+.hero-actions{margin-top:22px;gap:9px}
+.hero-benefits{margin-top:20px;gap:8px}
+.hero-benefits span{padding:7px 9px;font-size:8px}
+}
+
+@media(prefers-reduced-motion:reduce){
+.hero-copy{transition:none}
+}
+
+/* RX23-WEB-05: corporate light/dark semantic theme layer */
+:root{
+	--theme-bg:#ffffff;
+	--theme-bg-soft:#f6fbfe;
+	--theme-surface:#ffffff;
+	--theme-surface-soft:#f1f8fc;
+	--theme-border:#dce8f0;
+	--theme-text:#142c45;
+	--theme-text-muted:#607185;
+}
+
+html[data-theme='dark']{
+	--theme-bg:#08141f;
+	--theme-bg-soft:#0d1d2c;
+	--theme-surface:#112434;
+	--theme-surface-soft:#152b3e;
+	--theme-border:#25455f;
+	--theme-text:#d9e7f1;
+	--theme-text-muted:#9fb4c4;
+}
+
+body{background:var(--theme-bg);color:var(--theme-text)}
+
+html[data-theme='dark'] p,
+html[data-theme='dark'] .pricing-note,
+html[data-theme='dark'] .labs-note,
+html[data-theme='dark'] .pending-link,
+html[data-theme='dark'] .footer-main nav,
+html[data-theme='dark'] .footer-main address,
+html[data-theme='dark'] .footer-bottom,
+html[data-theme='dark'] .project-category,
+html[data-theme='dark'] .hero-bottom>span,
+html[data-theme='dark'] .hero-bottom>div,
+html[data-theme='dark'] .hero-bottom>a,
+html[data-theme='dark'] .tool-page-header .tool-privacy,
+html[data-theme='dark'] .converter-card-heading>span,
+html[data-theme='dark'] .business-disclaimer,
+html[data-theme='dark'] .qr-input-hint,
+html[data-theme='dark'] .qr-scan-note{color:var(--theme-text-muted)}
+
+html[data-theme='dark'] .section-head h2,
+html[data-theme='dark'] .service-card h3,
+html[data-theme='dark'] .lab-card h3,
+html[data-theme='dark'] .product-content h3,
+html[data-theme='dark'] .project-content h3,
+html[data-theme='dark'] .plan-card h3,
+html[data-theme='dark'] .tool-card h3,
+html[data-theme='dark'] .footer,
+html[data-theme='dark'] .tool-page-header h1,
+html[data-theme='dark'] .detail-page h1,
+html[data-theme='dark'] .detail-panel h2{color:var(--theme-text)}
+
+html[data-theme='dark'] .hero{background:linear-gradient(122deg,#0b1a28 8%,#0f2333 52%,#122d40 100%)}
+html[data-theme='dark'] .hero-copy{border-color:var(--theme-border);background:linear-gradient(170deg,#102638e0,#11293de0);box-shadow:0 20px 38px #02090f33}
+html[data-theme='dark'] .hero-chip,
+html[data-theme='dark'] .hero-benefits span,
+html[data-theme='dark'] .badge,
+html[data-theme='dark'] .tool-card>span,
+html[data-theme='dark'] .tags span,
+html[data-theme='dark'] .solution-landing .solution-state{border-color:var(--theme-border);background:#163246;color:#9fc9de}
+html[data-theme='dark'] .hero-bottom{border-top-color:var(--theme-border)}
+html[data-theme='dark'] .secondary,
+html[data-theme='dark'] .detail-back,
+html[data-theme='dark'] .tool-back,
+html[data-theme='dark'] .text-link{color:#8bd8ef}
+html[data-theme='dark'] .secondary{border-color:var(--theme-border);background:#173146}
+
+html[data-theme='dark'] .labs,
+html[data-theme='dark'] .plans-section,
+html[data-theme='dark'] .portfolio,
+html[data-theme='dark'] .detail-page,
+html[data-theme='dark'] .converter-page,
+html[data-theme='dark'] .business-page,
+html[data-theme='dark'] .qr-tool-page,
+html[data-theme='dark'] .solution-landing .solution-future{background:linear-gradient(180deg,var(--theme-bg-soft),var(--theme-bg) 560px);border-color:var(--theme-border)}
+
+html[data-theme='dark'] .service-card,
+html[data-theme='dark'] .lab-card,
+html[data-theme='dark'] .product-card,
+html[data-theme='dark'] .project-card,
+html[data-theme='dark'] .tool-card,
+html[data-theme='dark'] .plan-card,
+html[data-theme='dark'] .converter-card,
+html[data-theme='dark'] .business-card,
+html[data-theme='dark'] .qr-config-card,
+html[data-theme='dark'] .qr-preview-card,
+html[data-theme='dark'] .detail-panel,
+html[data-theme='dark'] .solution-landing .solution-card,
+html[data-theme='dark'] .solution-landing .solution-product,
+html[data-theme='dark'] .solution-landing .solution-shot,
+html[data-theme='dark'] .solution-landing .solution-hero-shot,
+html[data-theme='dark'] .solution-landing .solution-panel,
+html[data-theme='dark'] .solution-landing .solution-directory li,
+html[data-theme='dark'] .solution-landing .solution-features li,
+html[data-theme='dark'] .solution-landing .solution-tags li,
+html[data-theme='dark'] .solution-landing .solution-status,
+html[data-theme='dark'] .solution-landing .flow-block,
+html[data-theme='dark'] .business-results,
+html[data-theme='dark'] .footer,
+html[data-theme='dark'] dialog{background:var(--theme-surface);border-color:var(--theme-border);color:var(--theme-text)}
+
+html[data-theme='dark'] .business-results,
+html[data-theme='dark'] .solution-landing .solution-panel,
+html[data-theme='dark'] .solution-landing .solution-status,
+html[data-theme='dark'] .detail-steps li,
+html[data-theme='dark'] .demo-panel,
+html[data-theme='dark'] .demo-slots>div,
+html[data-theme='dark'] .solution-landing .solution-directory li,
+html[data-theme='dark'] .solution-landing .solution-features li,
+html[data-theme='dark'] .solution-landing .solution-tags li,
+html[data-theme='dark'] .solution-landing .solution-blueprint,
+html[data-theme='dark'] .solution-landing .solution-product-image,
+html[data-theme='dark'] .project-image,
+html[data-theme='dark'] .screenshot-placeholder,
+html[data-theme='dark'] .product-visual,
+html[data-theme='dark'] .tool-card:hover,
+html[data-theme='dark'] .floating-label,
+html[data-theme='dark'] .label-code>svg,
+html[data-theme='dark'] .label-icon,
+html[data-theme='dark'] .chart-panel,
+html[data-theme='dark'] .demo-stats>div,
+html[data-theme='dark'] .demo-dashboard,
+html[data-theme='dark'] .demo-dashboard aside,
+html[data-theme='dark'] .tablet,
+html[data-theme='dark'] .phone,
+html[data-theme='dark'] .converter-page .converter-result input,
+html[data-theme='dark'] .converter-swap,
+html[data-theme='dark'] .qr-warning,
+html[data-theme='dark'] .qr-customization .qr-help-tooltip{background:var(--theme-surface-soft)}
+
+html[data-theme='dark'] .project-overlay{background:#081723de}
+
+html[data-theme='dark'] .converter-page input,
+html[data-theme='dark'] .converter-page select,
+html[data-theme='dark'] .business-page input[type=text],
+html[data-theme='dark'] .qr-tool-page input:not([type=checkbox]):not([type=color]):not([type=range]),
+html[data-theme='dark'] .qr-tool-page textarea,
+html[data-theme='dark'] .qr-tool-page select,
+html[data-theme='dark'] .business-results textarea,
+html[data-theme='dark'] .qr-color,
+html[data-theme='dark'] .converter-categories button,
+html[data-theme='dark'] .business-selector button,
+html[data-theme='dark'] .business-vat-mode button,
+html[data-theme='dark'] .qr-type-selector button{background:#0f2436;border-color:var(--theme-border);color:var(--theme-text)}
+
+html[data-theme='dark'] .converter-categories button:hover,
+html[data-theme='dark'] .business-selector button:hover,
+html[data-theme='dark'] .business-vat-mode button:hover,
+html[data-theme='dark'] .qr-type-selector button:hover,
+html[data-theme='dark'] .converter-swap:hover{background:#17364d}
+
+html[data-theme='dark'] .converter-categories button[aria-pressed=true],
+html[data-theme='dark'] .business-selector button[aria-pressed=true],
+html[data-theme='dark'] .business-vat-mode button[aria-pressed=true],
+html[data-theme='dark'] .qr-type-selector button[aria-pressed=true]{background:#1c425a;border-color:#3f7395;color:#8ad8f0}
+
+html[data-theme='dark'] .footer-bottom,
+html[data-theme='dark'] .trust-strip,
+html[data-theme='dark'] .converter-categories,
+html[data-theme='dark'] .converter-bottom,
+html[data-theme='dark'] .business-selector,
+html[data-theme='dark'] .business-explanation,
+html[data-theme='dark'] .qr-customization,
+html[data-theme='dark'] .lab-features,
+html[data-theme='dark'] .hero-bottom,
+html[data-theme='dark'] .detail-steps li,
+html[data-theme='dark'] .detail-panel,
+html[data-theme='dark'] .solution-landing .solution-directory li,
+html[data-theme='dark'] .solution-landing .solution-features li,
+html[data-theme='dark'] .solution-landing .solution-status{border-color:var(--theme-border)}
+
+html[data-theme='dark'] dialog::backdrop{background:#040d146e}
